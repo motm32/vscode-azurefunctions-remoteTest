@@ -201,13 +201,13 @@
             },
             {
                 "command": "azureFunctions.createNewProject",
+                "when": "!virtualWorkspace",
                 "title": "%azureFunctions.createNewProject%",
                 "category": "Azure Functions",
                 "icon": {
                     "light": "resources/light/CreateNewProject.svg",
                     "dark": "resources/dark/CreateNewProject.svg"
-                },
-                "when": "!virtualWorkspace"
+                }
             },
             {
                 "command": "azureFunctions.createSlot",
