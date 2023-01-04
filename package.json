@@ -366,19 +366,19 @@
             "azureWorkspaceDeploy": [
                 {
                     "command": "azureFunctions.deploy",
-                    "when": "view == azureWorkspace",
+                    "when": "view == azureWorkspace && !virtualWorkspace",
                     "group": "navigation@1"
                 }
             ],
             "view/title": [
                 {
                     "command": "azureFunctions.createFunction",
-                    "when": "view == azureWorkspace",
+                    "when": "view == azureWorkspace && !virtualWorkspace",
                     "group": "navigation@1"
                 },
                 {
                     "submenu": "azureWorkspaceDeploy",
-                    "when": "view == azureWorkspace",
+                    "when": "view == azureWorkspace && !virtualWorkspace",
                     "group": "navigation@2"
                 }
             ],
@@ -405,7 +405,7 @@
                 },
                 {
                     "command": "azureFunctions.deploySlot",
-                    "when": "view == azureResourceGroups && viewItem =~ /azFuncSlot(?!s)/",
+                    "when": "view == azureResourceGroups && viewItem =~ /azFuncSlot(?!s)/ && !virtualWorkspace",
                     "group": "2@1"
                 },
                 {
