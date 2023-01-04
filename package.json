@@ -206,7 +206,8 @@
                 "icon": {
                     "light": "resources/light/CreateNewProject.svg",
                     "dark": "resources/dark/CreateNewProject.svg"
-                }
+                },
+                "when": "!virtualWorkspace"
             },
             {
                 "command": "azureFunctions.createSlot",
