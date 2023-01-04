@@ -83,6 +83,12 @@
         "workspaceContains:**/host.json"
     ],
     "main": "./main.js",
+    "capabilities": {
+        "virtualWorkspaces": {
+            "supported": "limited",
+            "description": "In virtual workspaces, creating a new function project, deploying, and debugging is not supported."
+        }
+    },
     "contributes": {
         "x-azResources": {
             "activation": {
@@ -393,7 +399,7 @@
                 },
                 {
                     "command": "azureFunctions.deploy",
-                    "when": "view == azureResourceGroups && viewItem =~ /azFuncProductionSlot/",
+                    "when": "view == azureResourceGroups && viewItem =~ /azFuncProductionSlot/ && !virtualWorkspace",
                     "group": "2@1"
                 },
                 {
