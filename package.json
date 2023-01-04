@@ -365,7 +365,7 @@
             "azureWorkspaceDeploy": [
                 {
                     "command": "azureFunctions.deploy",
-                    "when": "view == azureWorkspace && !virtualWorkspace",
+                    "when": "view == azureWorkspace",
                     "group": "navigation@1"
                 }
             ],
