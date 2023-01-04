@@ -201,7 +201,6 @@
             },
             {
                 "command": "azureFunctions.createNewProject",
-                "when": "!virtualWorkspace",
                 "title": "%azureFunctions.createNewProject%",
                 "category": "Azure Functions",
                 "icon": {
@@ -670,6 +669,10 @@
                 {
                     "command": "azureFunctions.viewProperties",
                     "when": "never"
+                },
+                {
+                    "command": "azureFunctions.createNewProject",
+                    "when": "!virtualWorkspace"
                 }
             ],
             "editor/context": [
