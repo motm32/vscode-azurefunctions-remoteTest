@@ -240,7 +240,8 @@
             {
                 "command": "azureFunctions.deploySlot",
                 "title": "%azureFunctions.deploySlot%",
-                "category": "Azure Functions"
+                "category": "Azure Functions",
+                "enablement": "!virtualWorkspace"
             },
             {
                 "command": "azureFunctions.disableFunction",
