@@ -187,8 +187,7 @@
                     "light": "resources/light/AddFunction.svg",
                     "dark": "resources/dark/AddFunction.svg"
                 },
-                "enablement": "!virtualWorkspace",
-                "tooltip": "Function not available in virtual workspaces"
+                "enablement": "!virtualWorkspace"
             },
             {
                 "command": "azureFunctions.createFunctionApp",
@@ -377,12 +376,12 @@
             "view/title": [
                 {
                     "command": "azureFunctions.createFunction",
-                    "when": "view == azureWorkspace && !virtualWorkspace",
+                    "when": "view == azureWorkspace",
                     "group": "navigation@1"
                 },
                 {
                     "submenu": "azureWorkspaceDeploy",
-                    "when": "view == azureWorkspace && !virtualWorkspace",
+                    "when": "view == azureWorkspace",
                     "group": "navigation@2"
                 }
             ],
@@ -404,12 +403,12 @@
                 },
                 {
                     "command": "azureFunctions.deploy",
-                    "when": "view == azureResourceGroups && viewItem =~ /azFuncProductionSlot/ && !virtualWorkspace",
+                    "when": "view == azureResourceGroups && viewItem =~ /azFuncProductionSlot/",
                     "group": "2@1"
                 },
                 {
                     "command": "azureFunctions.deploySlot",
-                    "when": "view == azureResourceGroups && viewItem =~ /azFuncSlot(?!s)/ && !virtualWorkspace",
+                    "when": "view == azureResourceGroups && viewItem =~ /azFuncSlot(?!s)/",
                     "group": "2@1"
                 },
                 {
@@ -674,10 +673,6 @@
                 {
                     "command": "azureFunctions.viewProperties",
                     "when": "never"
-                },
-                {
-                    "command": "azureFunctions.createNewProject",
-                    "when": "!virtualWorkspace"
                 }
             ],
             "editor/context": [
