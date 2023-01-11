@@ -187,7 +187,7 @@
                     "light": "resources/light/AddFunction.svg",
                     "dark": "resources/dark/AddFunction.svg"
                 },
-                "enablement": "!virtualWorkspaces"
+                "enablement": "!virtualWorkspace"
             },
             {
                 "command": "azureFunctions.createFunctionApp",
@@ -208,7 +208,7 @@
                     "light": "resources/light/CreateNewProject.svg",
                     "dark": "resources/dark/CreateNewProject.svg"
                 },
-                "enablement": "!virtualWorkspaces"
+                "enablement": "!virtualWorkspace"
             },
             {
                 "command": "azureFunctions.createSlot",
@@ -235,7 +235,7 @@
                 "title": "%azureFunctions.deploy%",
                 "category": "Azure Functions",
                 "icon": "$(cloud-upload)",
-                "enablement": "!virtualWorkspaces"
+                "enablement": "!virtualWorkspace"
             },
             {
                 "command": "azureFunctions.deploySlot",
