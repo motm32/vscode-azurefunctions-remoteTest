@@ -187,7 +187,8 @@
                     "light": "resources/light/AddFunction.svg",
                     "dark": "resources/dark/AddFunction.svg"
                 },
-                "enablement": "!virtualWorkspace"
+                "enablement": "!virtualWorkspace",
+                "tooltip": "Function not available in virtual workspaces"
             },
             {
                 "command": "azureFunctions.createFunctionApp",
@@ -208,8 +209,7 @@
                     "light": "resources/light/CreateNewProject.svg",
                     "dark": "resources/dark/CreateNewProject.svg"
                 },
-                "enablement": "!virtualWorkspace",
-                "tooltip": "Function not available in virtual workspaces"
+                "enablement": "!virtualWorkspace"
             },
             {
                 "command": "azureFunctions.createSlot",
